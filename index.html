@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code quiz</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!--start quiz block-->
+    <header id="start-quiz">
+        <h1>Press start to begin quiz</h1>
+        <button type="button" id="start-btn">start</button>
+    </header>
+<!--Q & A block -->
+    <main id="quiz">
+        <div id="questions"></div>
+        <div id="answers">
+            <div class="answer answer1"></div>
+            <div class="answer answer2"></div>
+            <div class="answer answer3"></div>
+            <div class="answer answer4"></div>
+
+        </div>
+        <div id="question-result"></div>
+    
+
+      <div>
+        <div class= "card timer">
+            <h3 class = "timer-text"></h3>
+            <div class="large-font timer-count"></div> 
+            <h3>seconds remaining</h3>
+        </div>
+      </div>
+      <div class="card results">
+        <div class = "correct-wrong-container">
+        <div>
+        <h2>correct: <span class="correct">0 </span> </h2>
+        <h2>wrong: <span class="wrong">0</span></h2>
+        </div>
+        <button class="reset-button">Reset Score</button>
+      </div>
+    </main>
+    <!--end game block-->
+    <div class="end-game">
+        <h1 id="game-over">End of quiz</h1>
+        <h3>please enter your intials</h3>
+        <input id="intials"></input type="" name="" value="">
+        <button id="save">save</button>
+        <div id="score"></div>
+        <h1 id="saved-score"></h1>
+    </div>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
